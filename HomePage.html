@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Westminster Network</title>
+    <meta name="viewpoint" content="width=device-width initial-scale=1">
+</head>
+
+<body>
+    <img src="WestminsterNetworkBanner.png" style="max-width:100%;height:auto;">
+
+    <p>Please click the blue button to the right to start the chat with West. </p>
+    <p>Some examples of questions you can ask are:</p>
+    <ul>
+        <li>Where is the Cavendish Library</li>
+        <li>What are the term dates</li>
+        <li>How can I reset my password</li>
+    </ul>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "6136fad1-9b29-4a0f-9a2f-b2253248d16c", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "6de416e0-4474-4ba4-b53f-0430c1a0c39b", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
